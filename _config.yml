@@ -95,7 +95,7 @@ analytics:
 # Site Author
 author:
   name             : "Joon"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/image/JoonLogo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Hard Worker"
   location         : "Somewhere in Korea"
   email            :
