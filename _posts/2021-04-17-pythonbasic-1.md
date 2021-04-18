@@ -18,7 +18,7 @@ last_modified_at: 2021-04-18
 
 효율적인 코딩을 위해서는 나에게 맞는 환경을 구축하는 것이 정말 중요한 것 같다. 나의 경우에는 **Visual Studio** 가 가장 익숙한 편이라 **Visual Studio** 로 파이썬 개발환경을 구축하려 한다.  
 
-![Visual Studio 패키지 관리 창]("\assets\image\pythonbasic-1\visual-studio-python.jpg")  
+![Visual Studio 패키지 관리 창]("/assets/image/pythonbasic-1/visual-studio-python.jpg")  
 
 Visual Studio 는 위와 같이 **"Python 패키지 관리"** 를 위해 **"Python 환경"** 창을 가지고 있다. 여기에서는 패키지 이름을 잘 모르더라도 검색을 통해 새로운 패키지를 설치할 수 있고, 별도의 명령어 없이 직접 설치되어 있는 패키지를 확인할 수 있기 때문에 매우 편리한 것 같다.
 
