@@ -27,8 +27,7 @@ GitHub 블로그가 다른 블로그에 비해서 자유도가 상당히 높은 
 - [**kramdown 기본 문법**](https://kramdown.gettalong.org/syntax.html#kramdown-syntax)  
 - [**HTML 렌더링 엔진**](https://velog.io/@codenmh0822/%EB%A0%8C%EB%8D%94%EB%A7%81Rendering)
 
--------
--------
+*********
 
 ## **kramdown syntax**
 {: .text-center}  
@@ -60,7 +59,9 @@ kramdown에서 CSS 의 class를 지정하는 문법은 아래와 같다. 아래 
 - **Math Block** - [**MathJax**](http://docs.mathjax.org/en/latest/)  
 Jekyll은 MathJax를 지원한다. MathJax는 브라우저에서 LaTeX를 사용할 수 있도록 해준다. MathJax는 오픈소스로 JavaScript를 기반으로 만들어진 렌더링 엔진이다. [**LaTeX**](https://www.latex-project.org/)는 기술/과학 문서의 제작을 위한 기능들을 포함하고 있는 시스템으로 흔히 논문 작성 등 전문적인 문서 작성에 사용되고 있다.  
 
-    Latex를 사용하면 아래와 같이 수식을 GitHub 블로그에 넣는 것이 가능해진다. 다만, 이 기능을 사용하기 위해서는 GitHub 테마를 조금 수정해야 한다. 수정 방법이 자세하게 적혀있는 글을 소개한다. ( [**링크**](https://mkkim85.github.io/blog-apply-mathjax-to-jekyll-and-github-pages/) )
+    Latex를 사용하면 아래와 같이 수식을 GitHub 블로그에 넣는 것이 가능해진다. 다만, 이 기능을 사용하기 위해서는 GitHub 테마를 조금 수정해야 한다. 수정 방법이 자세하게 적혀있는 글을 소개한다. ( [**글 1 (국문)**](https://mkkim85.github.io/blog-apply-mathjax-to-jekyll-and-github-pages/), [**글 2 (영문)**](http://benlansdell.github.io/computing/mathjax/) ) 
+
+    [LaTeX Tutorial](https://latex-tutorial.com/)
 
     ```
     $$
@@ -108,20 +109,21 @@ $$
     Something in here.
     Other para.  
     ```
-    {: .notice--primary} 
 
-    ```
+    ```Markdown
     This is a para.
     <div>
     Something in here.
     </div>
     Other para.
     ```
-    {: .notice--primary} 
 
 -------
--------
-## **Cusotm Class 만들기**
-{: .text-center} 
+- **부연 설명**  
+문서 내에 있는 특정 단어에 마우스를 올리면 그 아래에 설명이 나타나도록 설정할 수 있다. 부연 설명이 있는 단어는 밑줄이 생기게 되는데, 그 곳에 마우스를 잠시 올려두면 부연 설명이 나타난다. "여기" 에 마우스를 가져다 대면, 입력해놓은 부연설명을 볼 수 있다.
 
-이 부분이 GitHub 블로그를 예쁘게 꾸미고, 포스트를 눈에 띄게 잘 작성하는 중요한 포인트이다.
+*[여기]: 이렇게 입력하면 됨.
+
+```Markdown
+*[여기]: 이렇게 입력하면 됨.
+```
