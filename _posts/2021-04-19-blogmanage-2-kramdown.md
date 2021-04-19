@@ -110,7 +110,7 @@ $$
     Other para.  
     ```
 
-    ```Markdown
+    ```
     This is a para.
     <div>
     Something in here.
@@ -124,6 +124,6 @@ $$
 
 *[여기]: 이렇게 입력하면 됨.
 
-```Markdown
-*[여기]: 이렇게 입력하면 됨.
-```
+    ```
+    *[여기]: 이렇게 입력하면 됨.
+    ```
