@@ -4,11 +4,11 @@ excerpt: "kramdown과 관련된 라이브러리에 대한 이해"
 
 # categories:
 #   - Blog
-tags:
-  - Blog
-  - MathJax
-  - Jekyll
-  - LaTeX
+# tags:
+#   - Blog
+#   - MathJax
+#   - Jekyll
+#   - LaTeX
 
 toc: true
 toc_sticky: true
@@ -82,7 +82,6 @@ Jekyll은 MathJax를 지원한다. MathJax는 브라우저에서 LaTeX를 사용
     ```
 
 $$
-\begin{aligned}
 & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
 = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
 & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
@@ -95,7 +94,6 @@ $$
     \vdots \\
     y_n
     \end{array} \right)
-\end{aligned}
 $$
 
 
