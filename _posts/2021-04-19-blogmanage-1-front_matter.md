@@ -15,7 +15,8 @@ date: 2021-04-19
 last_modified_at: 2021-04-19
 ---
 
-_아래 작성되는 애드인은 이 블로그의 테마이자 가장 흔히 쓰이고 있는 Jekyll 테마인 Miminal Mistakes를 기준으로 작성되었습니다. 다른 GH Blog 테마에서는 검증되지 않았습니다._  
+_아래 작성되는 애드인은 이 블로그의 테마이자 가장 흔히 쓰이고 있는 Jekyll 테마인 Miminal Mistakes를 기준으로 작성되었습니다. 다른 GH Blog 테마에서는 검증되지 않았습니다._
+{: .notice--primary}  
 
 GitHub 블로그를 운영하기 위해서는 Markdown에 대한 이해도 중요하지만 Jekyll 에서 제공하는 키워드도 정확히 알고 있어야 한다. 아래는 향후 블로그 관리에 필요한 키워드들만 뽑아내어 정리하고 있다. 자세한 내용은 [**Minimal Mistakes**]("https://mmistakes.github.io/minimal-mistakes/") / [**Jekyll**]("https://jekyllrb.com/") 사이트에 접속하게 되면 볼 수 있다.
 

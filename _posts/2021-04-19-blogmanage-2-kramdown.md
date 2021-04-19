@@ -29,16 +29,16 @@ jekyll 의 markdown 렌더링 엔진으로 kramdown이 사용된다고 했지만
 
 그 중에서 눈 여겨 봐야할 것 같은 기능들을 아래에 정리한다.
 
-- CSS Class 지정
+- **CSS Class 지정**
 
-kramdown에서 CSS 의 class를 지정하는 문법은 아래와 같다.  
+kramdown에서 CSS 의 class를 지정하는 문법은 아래와 같다. 아래 코드블록은 텍스트를 왼쪽으로 정렬하는 방법을 보여준다.  
 ```markdown
 Left aligned text
 {: .text-left}
 ```
 블록의 맨 마지막에 { **:** `class_name` }과 같은 형태로 미리 지정된 클래스를 입력하면, css 에 정의된 대로 스타일이 변경된다. 이 기능을 통해, 글자 색 변경, 음영 넣기 등이 가능해진다.  
 
-- Escape Character (\\)
+- **Escape Character - \\ or ￦**
 
 > 문자열 처리와 관련된 프로그래밍을 많이 하던 사람들에게는 Escape 문자는 굉장히 익숙한 기능 중 하나이다. 기존 Markdown에서도 Escape 문자를 지원하지만 kramdown에서는 몇몇 문자에 대해 추가적인 Escape 기능을 지원한다.
 
