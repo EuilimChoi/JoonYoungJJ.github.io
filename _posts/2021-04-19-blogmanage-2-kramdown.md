@@ -95,7 +95,7 @@ Jekyll은 MathJax를 지원한다. MathJax는 브라우저에서 LaTeX를 사용
     ```
 
 -------
-- HTML 블록 삽입  
+- **HTML 블록 삽입**  
 위에서도 언급했지만, Markdown 중간중간에 HTML 태그를 넣는 것은 아무런 문제가 되지 않는다. kramdown이 HTML도 지원을 하기 때문이다. 예를 들면, 아래와 같다.
 
     ```
