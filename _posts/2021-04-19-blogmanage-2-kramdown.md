@@ -58,6 +58,7 @@ Jekyll은 MathJax를 지원한다. MathJax는 브라우저에서 LaTeX를 사용
 
     Latex를 사용하면 아래와 같이 수식을 GitHub 블로그에 넣는 것이 가능해진다.
 
+    ```
     $$
     \begin{aligned}
     & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
@@ -74,25 +75,26 @@ Jekyll은 MathJax를 지원한다. MathJax는 브라우저에서 LaTeX를 사용
         \end{array} \right)
     \end{aligned}
     $$
+    ```
 
-    ```
-    $$
-    \begin{aligned}
-    & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
-    = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
-    & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
-        \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
-        \vdots & \ddots & \vdots \\
-        \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
-        \end{array} \right)
-    \left( \begin{array}{c}
-        y_1 \\
-        \vdots \\
-        y_n
-        \end{array} \right)
-    \end{aligned}
-    $$
-    ```
+$$
+\begin{aligned}
+& \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+= \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
+& (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+    \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
+    \vdots & \ddots & \vdots \\
+    \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
+    \end{array} \right)
+\left( \begin{array}{c}
+    y_1 \\
+    \vdots \\
+    y_n
+    \end{array} \right)
+\end{aligned}
+$$
+
+
 
 -------
 - **HTML 블록 삽입**  
@@ -103,14 +105,16 @@ Jekyll은 MathJax를 지원한다. MathJax는 브라우저에서 LaTeX를 사용
     Something in here.
     Other para.  
     ```
-
-    ```Markdown
+    {: .notice--primary} 
+    
+    ```
     This is a para.
     <div>
     Something in here.
     </div>
     Other para.
     ```
+    {: .notice--primary} 
 
 -------
 -------
@@ -118,6 +122,3 @@ Jekyll은 MathJax를 지원한다. MathJax는 브라우저에서 LaTeX를 사용
 {: .text-center} 
 
 이 부분이 GitHub 블로그를 예쁘게 꾸미고, 포스트를 눈에 띄게 잘 작성하는 중요한 포인트이다.
-
-
-*[포인트]: It's called Markdown
