@@ -10,6 +10,7 @@ excerpt: "kramdown과 관련된 라이브러리에 대한 이해"
 toc: true
 toc_sticky: true
 toc_icon : fas fa-file-code
+usemathjax: true
  
 date: 2021-04-19
 last_modified_at: 2021-04-19
@@ -106,7 +107,7 @@ $$
     Other para.  
     ```
     {: .notice--primary} 
-    
+
     ```
     This is a para.
     <div>
