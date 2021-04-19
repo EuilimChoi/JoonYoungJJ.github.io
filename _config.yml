@@ -276,7 +276,7 @@ defaults:
     values:
       layout: single
       toc: true
-      toc_label: "테이블"
+      toc_label: "목차"
       author_profile: true
       author: Joon
       read_time: true

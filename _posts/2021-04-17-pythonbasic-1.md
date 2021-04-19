@@ -28,7 +28,7 @@ Visual Studio 는 위와 같이 **"Python 패키지 관리"** 를 위해 **"Pyth
 
 이에 관련해서는 이미 상당히 많은 수의 자료가 인터넷에 나와 있었다. 각각에 대한 이해를 위한 링크는 아래와 같다.
 
-- [인터프리터 언어와 컴파일 언어]("https://velog.io/@emily0_0/%EC%BB%B4%ED%8C%8C%EC%9D%BC-%EC%96%B8%EC%96%B4%EC%99%80-%EC%9D%B8%ED%84%B0%ED%94%84%EB%A6%AC%ED%84%B0-%EC%96%B8%EC%96%B4")  
-- [C 컴파일 과정]("https://brunch.co.kr/@mystoryg/57")  
-- [Python 동작 원리]("https://cjh5414.github.io/about-python-and-how-python-works/")  
+- [인터프리터 언어와 컴파일 언어](https://velog.io/@emily0_0/%EC%BB%B4%ED%8C%8C%EC%9D%BC-%EC%96%B8%EC%96%B4%EC%99%80-%EC%9D%B8%ED%84%B0%ED%94%84%EB%A6%AC%ED%84%B0-%EC%96%B8%EC%96%B4)  
+- [C 컴파일 과정](https://brunch.co.kr/@mystoryg/57)  
+- [Python 동작 원리](https://cjh5414.github.io/about-python-and-how-python-works/)  
 
