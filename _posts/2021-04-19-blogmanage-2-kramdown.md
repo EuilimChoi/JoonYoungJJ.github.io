@@ -4,13 +4,16 @@ excerpt: "kramdown과 관련된 라이브러리에 대한 이해"
 
 # categories:
 #   - Blog
-# tags:
-#   - [Blog, jekyll, Github, Git]
+tags:
+  - Blog
+  - MathJax
+  - Jekyll
+  - LaTeX
 
 toc: true
 toc_sticky: true
 toc_icon : fas fa-file-code
-usemathjax: true
+use_math: true
  
 date: 2021-04-19
 last_modified_at: 2021-04-19
@@ -57,7 +60,7 @@ kramdown에서 CSS 의 class를 지정하는 문법은 아래와 같다. 아래 
 - **Math Block** - [**MathJax**](http://docs.mathjax.org/en/latest/)  
 Jekyll은 MathJax를 지원한다. MathJax는 브라우저에서 LaTeX를 사용할 수 있도록 해준다. MathJax는 오픈소스로 JavaScript를 기반으로 만들어진 렌더링 엔진이다. [**LaTeX**](https://www.latex-project.org/)는 기술/과학 문서의 제작을 위한 기능들을 포함하고 있는 시스템으로 흔히 논문 작성 등 전문적인 문서 작성에 사용되고 있다.  
 
-    Latex를 사용하면 아래와 같이 수식을 GitHub 블로그에 넣는 것이 가능해진다.
+    Latex를 사용하면 아래와 같이 수식을 GitHub 블로그에 넣는 것이 가능해진다. 다만, 이 기능을 사용하기 위해서는 GitHub 테마를 조금 수정해야 한다. 수정 방법이 자세하게 적혀있는 글을 소개한다. ( [**링크**](https://mkkim85.github.io/blog-apply-mathjax-to-jekyll-and-github-pages/) )
 
     ```
     $$
