@@ -34,9 +34,6 @@ GitHub 블로그는 Jekyll 이라는 Static Site Generator를 사용하고 있�
 한마디로 말하면, Static 이란 상호작용 없이 일방적으로 내용만 보내주는 형태로 실시간으로 변동이 필요없는 페이지에 주로 사용된다. 좋은 예시로는 어느 회사의 회사소개 페이지, 뉴스 등이 있다. Dynamic 이란 상호작용이 필요하거나 실시간으로 데이터의 변경이 잦은 곳에 주로 사용된다. 예를 들어, 어느 영화관의 잔여 좌석 정보라든지, 온라인 쇼핑몰 등이 있다. Site Generator 라는 것은 HTML을 자동으로 생성해주는 것으로써, Markdown이 아니어도 여러가지 형태의 다른 방법으로 작성된 코드를 HTML로 빌드해서 방문자들에게 그 내용을 보여줄 수 있도록 하는 SW이다. 
 
 {% include figure image_path="https://devopedia.org/images/article/78/1631.1525880749.png" alt="Static Site Generator" caption="Static Site Generator by. DEVOPEDIA" %}
-<!-- ![Static Site Generator](https://devopedia.org/images/article/78/1631.1525880749.png)  
-[DEVOPEDIA](https://devopedia.org/static-site-generators) 에서 스크랩
-{: .text-center}   -->
 
 ## **Front Matter (전문)**
 {: .text-center}  
