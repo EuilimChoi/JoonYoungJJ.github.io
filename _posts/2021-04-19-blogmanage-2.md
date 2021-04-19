@@ -22,7 +22,8 @@ GitHub 블로그가 다른 블로그에 비해서 자유도가 상당히 높은 
 - [**Markdown 기본 문법**]("https://www.markdownguide.org/basic-syntax/")
 - [**kramdown 기본 문법**]("https://kramdown.gettalong.org/syntax.html#kramdown-syntax")
 
-## **kramdown syntax**{: .text-center}
+## **kramdown syntax**
+{: .text-center}  
 
 jekyll 의 markdown 렌더링 엔진으로 kramdown이 사용된다고 했지만, jekyll 공식 사이트에서는 kramdown의 기능 중 2가지는 지원이 되지 않는다고 명시해두고 있다. ([ **링크** ]("https://jekyllrb.com/docs/configuration/markdown/")) CommonMark, Cusotm Markdown Proceessors 두 기능을 제외한 나머지 기능은 모두 지원이 된다.
 
