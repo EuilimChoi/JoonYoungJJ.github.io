@@ -32,9 +32,9 @@ GitHub 블로그 자유도가 높은 이유는 Jekyll에서 사용되는 Markdow
 ## **kramdown syntax**
 {: .text-center}  
 
-jekyll 의 markdown 렌더링 엔진 `(markdown ⇒ html)` 으로 kramdown이 사용되고 있지만, jekyll 공식 사이트에서는 kramdown의 기능 중 2가지는 제외된다고 명시해두고 있다. ([ **링크** ](https://jekyllrb.com/docs/configuration/markdown/)) CommonMark, Cusotm Markdown Proceessors 두 기능이 제외되는데, 나머지 기능은 모두 지원이 된다.  
+jekyll 의 markdown 렌더링 엔진 `(markdown ⇒ html)` 으로 kramdown이 사용되고 있지만, jekyll 공식 사이트에서는 kramdown의 기능 중 2가지는 제외된다고 명시해두고 있다. ([ **링크** ](https://jekyllrb.com/docs/configuration/markdown/)) CommonMark, Custom Markdown Proceessors 두 기능이 제외되는데, 나머지 기능은 모두 지원이 된다.  
 
-Kramdown은 Markdown 뿐만 아니라, HTML도 지원을 하므로, 홈페이지 작성시에 Markdown, HTML을 병행하여 사용할 수 있다.
+kramdown은 Markdown 뿐만 아니라, HTML도 지원을 하므로, 홈페이지 작성시에 Markdown, HTML을 병행하여 사용할 수 있다.
 
 그 중에서 눈 여겨 봐야할 것 같은 기능들을 아래에 정리한다.
 
@@ -62,6 +62,8 @@ Jekyll은 MathJax를 지원한다. MathJax는 브라우저에서 LaTeX를 사용
     Latex를 사용하면 아래와 같이 수식을 GitHub 블로그에 넣는 것이 가능해진다. 다만, 이 기능을 사용하기 위해서는 GitHub 테마를 조금 수정해야 한다. 수정 방법이 자세하게 적혀있는 글을 소개한다. ( [**글 1 (국문)**](https://mkkim85.github.io/blog-apply-mathjax-to-jekyll-and-github-pages/), [**글 2 (영문)**](http://benlansdell.github.io/computing/mathjax/) ) 
 
     [LaTeX Tutorial](https://latex-tutorial.com/)
+
+    위 튜토리얼에 있는 문법대로 아래 식을 작성해도 관계없지만, Matlab 을 사용할 줄 안다면 심볼릭함수를 만들어서, LaTeX 명령어를 이용하면 아래 식이 얻어진다고 하니 직접 작성하는 것보다는 Matlab을 한번 거쳐서 식을 만들어 내는 것이 효율적일 듯 하다. LaTeX 에디터들도 많이 있는데 아직은 사용할 마음이 없어서 여기서 자세히 다루지는 않았다.
 
     ```
     $$
