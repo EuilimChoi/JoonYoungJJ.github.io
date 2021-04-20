@@ -21,9 +21,10 @@ last_modified_at: 2021-04-19
 
 GitHub 블로그는 다른 블로그에 비해서 자유도가 상당히 높은 편이다. 테마도 꽤 다양하고, 능력만 된다면 특정 테마를 시작으로 해서 자신이 원하는 대로 꾸미고 운영하는 것이 가능하다.    
 
-GitHub 블로그 자유도가 높은 이유는 Jekyll에서 사용되는 Markdown 문법에는 css 클래스 지정 문법을 지원하기 때문이다. 일반적으로 Markdown 에서는 css가 사용되지 않는다. 하지만 Jekyll 덕분에, Markdown에서 css로 정의된 스타일을 사용할 수 있게 되었다. Jekyll 에 적용되는 Markdown 렌더링 엔진은 [**kramdown**](https://kramdown.gettalong.org/index.html)으로 불려진다. 기존의 Markdown 문법에 몇 가지 유용한 기능들을 추가적으로 지원하는 것이 특징이다. 아래는 추가적인 설명을 위한 링크이다.  
+GitHub 블로그 자유도가 높은 이유는 Jekyll에서 사용되는 Markdown 문법에는 css 클래스 지정 문법을 지원하기 때문이다. 일반적으로 Markdown 에서는 css가 사용되지 않는다. 하지만 Jekyll 덕분에, Markdown에서 css로 정의된 스타일을 사용할 수 있게 되었다. Jekyll 에 적용되는 Markdown 렌더링 엔진은 [**kramdown**](https://kramdown.gettalong.org/index.html)으로 불려진다. 기존의 Markdown 문법에 몇 가지 유용한 기능들을 추가적으로 지원하는 것이 특징이다. 아래는 추가적인 설명을 위한 링크이다. Markdown 기본문법은 거의 동일하니 아래 링크 중 한 가지만 들어가서 보면 될 것 같다.  
 
-- [**Markdown 기본 문법**](https://www.markdownguide.org/basic-syntax/)
+- [**Markdown 기본 문법 1 (영어)**](https://www.markdownguide.org/basic-syntax/)
+- [**Markdown 기본 문법 2 (한글)**](https://www.markdowntutorial.com/kr/)
 - [**kramdown 기본 문법**](https://kramdown.gettalong.org/syntax.html#kramdown-syntax)  
 - [**HTML 렌더링 엔진**](https://velog.io/@codenmh0822/%EB%A0%8C%EB%8D%94%EB%A7%81Rendering)
 
