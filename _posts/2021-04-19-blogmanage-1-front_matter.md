@@ -7,9 +7,8 @@ excerpt: "블로그 관리를 위한 Jekyll 문법"
 # tags:
 #   - [Blog, jekyll, Github, Git]
 
-# toc: true
-# toc_sticky: true
-# toc_icon : fas fa-heading
+toc: true
+toc_sticky: true
  
 date: 2021-04-19
 last_modified_at: 2021-04-19
