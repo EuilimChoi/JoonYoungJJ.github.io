@@ -1,14 +1,14 @@
 ---
-title:  "[Blog 관리] 3. Github 블로그 별도 추가 항목 (댓글, 애널리틱스 등)"
+title:  "Blog 관리 3 - Github 블로그 별도 추가 항목 (댓글, 애널리틱스 등)"
 excerpt: "Github 블로그 메뉴얼 작업 리스트"
 
-# categories:
-#   - Blog
-# tags:
-#   - Blog
-#   - MathJax
-#   - Jekyll
-#   - LaTeX
+categories:
+  - Blog
+tags:
+  - Blog Management
+  - Comments
+  - Google Analytics
+  - Webmatser tool
 
 toc: true
 toc_sticky: true
@@ -19,7 +19,9 @@ date: 2021-04-20
 last_modified_at: 2021-04-20
 ---
 
-Github 블로그는 타 블로그와는 달라서, 웹 사이트 노출, 댓글기능, 웹 사이트 방문자 분석 등 기본적으로 제공되어야 할 법한 기능들을 모두 직접 등록하여 사용하여야 한다. 다행히도 대부분의 기업들이 무료로 이러한 서비스를 제공하고 있어서 제대로된 가이드만 있다면 따라하는 데 있어서 어려움은 없을 것 같다.
+Github 블로그는 타 블로그와는 달라서, 웹 사이트 노출, 댓글기능, 웹 사이트 방문자 분석 등 기본적으로 제공되어야 할 법한 기능들을 모두 직접 등록하여 사용하여야 한다. 다행히도 대부분의 기업들이 무료로 이러한 서비스를 제공하고 있어서 제대로된 가이드만 있다면 따라하는 데 있어서 어려움은 없을 것 같다.  
+
+---
 
 ## **웹 사이트 노출**
 {: .text-center}  
@@ -27,6 +29,12 @@ Github 블로그는 타 블로그와는 달라서, 웹 사이트 노출, 댓글�
 타 블로그 전문 사이트에서 블로그를 개설하는 것과 달리 Github 블로그는 노출을 원하는 각 검색엔진마다 내 블로그를 등록해야 한다. 이 블로그의 경우에는 Google, Naver, Daum, Bing에 각각 등록을 마쳤다. 이 내용의 경우에는 Github 블로그에서 상당히 흔한 주제로 검색을 하면 여러 블로그에 이에 대해 상세하게 다루고 있기 때문에 나까지 이 것을 상세하게 다룰 필요는 없을 듯 하다. 따라서 자세한 설명을 위해서는 구글에 "github 블로그 검색엔진 등록" 와 같이 검색한 다음, 이 블로그를 제외한 다른 블로그에 들어가면 된다.  
 
 사실 내 생각에는 간단하게만 설명해도 대부분의 사람들이 이해하고 따라하는데 어려움이 없을 것이라 생각한다. 각 사이트마다 웹마스터(도구)가 존재한다. 네이버를 예로 들면, 네이버 웹마스터도구라고 검색을 하게되면 해당 사이트가 존재한다. 이 사이트에 들어가서, 자신의 github 주소를 입력하면 된다. 내 블로그를 기준으로는 `joonyoungjj.github.io`가 되겠다. 이후, 등록절차를 진행하면 되는데 다음을 제외하고 나머지 검색엔진은 루트폴더에 인증을 위한 xml, html 파일을 설치하라고 요구한다. _config.yml 이 존재하고 있는 위치가 루트 폴더이고, 다운로드 받으라고 하는 파일을 루트 폴더에 다운받아 두고, github desktop (또는 cmd) 로 commit/push 이후에 github 서버에 해당 파일이 업로드가 완료되면 인증이 정상적으로 이루어진다. 이 때, 꼭 정상적으로 등록이 완료되었다는 문구를 확인해야 한다.  
+그 이후, 사이트맵 (Sitemap.xml)을 웹마스터 도구에 등록을 하게되면 검색을 할 수 있는 준비가 끝난다. 다음과 Zum은 별도의 사이트맵 등록이 불필요하다고 한다.  
+- [**Naver 사이트맵 등록**](http://blog.naver.com/PostView.nhn?blogId=pswkiller&logNo=221343368118&categoryNo=0&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=postView)
+- [**Google 사이트맵 등록**](https://imweb.me/faq?mode=view&category=29&category2=35&idx=15573)
+- [**Bing 사이트맵 등록**](https://nicksstory.tistory.com/405)
+
+---
 
 ## **댓글 기능**
 {: .text-center}  

@@ -1,14 +1,13 @@
 ---
-title:  "[Blog 관리] 2. Jekyll - markdown + css (kramdown)"
+title:  "Blog 관리 2 - Jekyll - markdown + css (kramdown)"
 excerpt: "kramdown과 관련된 라이브러리에 대한 이해"
 
-# categories:
-#   - Blog
-# tags:
-#   - Blog
-#   - MathJax
-#   - Jekyll
-#   - LaTeX
+categories:
+  - Blog
+tags:
+  - Blog Management
+  - kramdown
+  - LaTeX
 
 toc: true
 toc_sticky: true

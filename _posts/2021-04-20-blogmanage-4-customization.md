@@ -1,14 +1,11 @@
 ---
-title:  "[Blog 관리] 4. Github 블로그 커스터마이징 A-Z 정리 (Plugins)"
+title:  "Blog 관리 4 - Github 블로그 커스터마이징 A-Z 정리 (Plugins)"
 excerpt: "Github 블로그를 커스터마이징 기법"
 
-# categories:
-#   - Blog
-# tags:
-#   - Blog
-#   - MathJax
-#   - Jekyll
-#   - LaTeX
+categories:
+  - Blog
+tags:
+  - Blog Management
 
 toc: true
 toc_sticky: true
@@ -17,6 +14,17 @@ use_math: true
  
 date: 2021-04-20
 last_modified_at: 2021-04-20
+
+
+gallery:
+  - url: /assets/image/blogmanage-4/jekyll-archives-tags_Index.jpg
+    image_path: /assets/image/blogmanage-4/jekyll-archives-tags_Index.jpg
+    alt: "Index of Tags"
+    title: "Index of Tags"
+  - url: /assets/image/blogmanage-4/jekyll-archives-categories_Index.jpg
+    image_path: /assets/image/blogmanage-4/jekyll-archives-categories_Index.jpg
+    alt: "Index of Categories"
+    title: "Index of Categories"
 ---
 
 사이트를 한 눈에 잘 보이도록 사이트에 네비게이션 기능과, 메뉴는 꼭 필요하다. 아래는 내 사이트의 현재 상태이다.  
@@ -53,7 +61,7 @@ Jekyll은 Generators, Converters, Commands, Tags, Filters, Hooks 총 6개 타입
 > Filters       : Liquid Filter 생성  
 > Hooks         : Jekyll 블로그 사용성 증가  
 
-플러그인 추가방식은 아래와 같다. 먼저, 루트폴더에 있는 Gemfile을 편집한다. [**Gemfile**](https://bundler.io/man/gemfile.5.html)은 Ruby 프로그램에서 사용되는 라이브러리에 대한 정보를 나타내는 파일로 매니페스트 파일이라고 생각하면 될 것 같다.
+플러그인 추가방식은 아래와 같다. `jekyll-archives`를 설치하는 방법이다. 먼저, 루트폴더에 있는 Gemfile을 편집한다. [**Gemfile**](https://bundler.io/man/gemfile.5.html)은 Ruby 프로그램에서 사용되는 라이브러리에 대한 정보를 나타내는 파일로 매니페스트 파일이라고 생각하면 될 것 같다.
 ```ruby
 source "https://rubygems.org"
 ...
@@ -83,10 +91,24 @@ whitelist:
 ---
 이제, Jekyll에 적용시킬 수 있는 플러그인을 차근차근 살펴보려 한다. 
 
-### `Generators - Jekyll Feed`  
+### `Generators > jekyll-feed`  
+Front Matter, Profile, Site 에 대한 내용을 Html로 변환한다. Front Matter는 이전에 작성해 둔 [블로그 관리 1](https://joonyoungjj.github.io/blogmanage-1-front_matter)을 참고하면 된다.
 
-Front Matter, Profile, Site 이름을 표시한다.
+- [Github repository](https://github.com/jekyll/jekyll-feed)
+- Docs - 찾을 수 없음
 
+### `Generators > jekyll-archives`  
+날짜, 태그, 카테고리를 생성한다. Github 블로그에 포스트를 작성할 때에는 전문(Front Matter)에 필요에 따라서 Tag, Category, Date를 작성할 수 있다. 이 태그들은 jekyll-archives 플러그인을 통해 자동으로 메뉴를 만들기 위한 키워드다.  
 
+태그와 카테고리는 아래와 같이 포스트의 마지막에 나타난다.  
+![태그와 카테고리](/assets/image/blogmanage-4/jekyll-archives-tags.jpg)
+{: .text-center}  
 
+그리고 이를 각각 클릭해보면 Tag 인덱싱 테이블, Category 인덱싱 테이블이 각각 자동으로 만들어져있음을 확인할 수 있다.
+
+{% include gallery caption="Index" layout="half" %}  
+
+- [**Tags/Categories 설명**](https://jekyllrb.com/docs/posts/#including-images-and-resources)
+
+하지만, 위와 같은 디자인으로 메뉴를 내비두기에는 디자인이 너무 심플하다. 다행히 이 메뉴를 커스텀할 수 있는 방법이 존재한다. 먼저 알아둬야 하는 것이 jekyll-archives 플러그인을 설치하고 활성화시킨 후, 포스트 Front Matter에 Tag(Tags), Category(Categories)를 입력해두고 Jekyll을 실행시키면 `루트폴더/_site/tags`와 `루트폴더/_site/categories` 에 사이트 내에 모든 Tag와 Category가 폴더별로 저장된다는 것이다.  
 
