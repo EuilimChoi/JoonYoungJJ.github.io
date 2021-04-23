@@ -70,5 +70,8 @@ use_math: true      # true  : use MathJax
                     # false (default) : don't use MathJax
 ---
 
+# image
+image : "/assets/image/JoonLogo.png"
+
 ↓ Contents ...
 ```

@@ -44,3 +44,12 @@ _(이 블로그에는 utterance가 적용되어 있다. Issues에서 댓글을 �
 {: .text-center}  
 
 방문자 분석의 경우에도 구글의 힘을 빌려야 한다. 구글에서는 웹 사이트의 방문자 분석을 위해 애널리틱스 서비스를 운영하고 있다. 이 [**블로그 글**](https://devinlife.com/howto%20github%20pages/google-search-console-and-analytics/)을 참고하면 어렵지 않게 애널리틱스에 내 사이트를 등록하여 방문자 분석을 해볼 수 있다. 위 블로그 글 참고시에 추적 ID의 형태가 "UA-XXX..." 에서 "G-XXX..."로 변경되었다는 점을 유념하고 보아야 한다.  
+그리고, 아래와 같이 _config.xml을 변경해줘야 정상적으로 동작한다. 
+```markdown
+# Analytics
+analytics:
+  provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
+  google:
+    tracking_id          : "G-VW18SDWR8S"
+    anonymize_ip         : false # true, false (default)
+```
