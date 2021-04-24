@@ -146,7 +146,7 @@ Markup언어의 종류는 상당히 다양하지만, jekyll은 markdown과 texti
 jekyll-coffescript 와 마찬가지로 JavaScript 코드를 생성해내지만, 이 때 사용되는 언어는 Ruby 이다.  
 
 ### `Commands > jekyll-compose`  
-??  
+이 플러그인을 사용하면 포스트를 등록할 때 여러  
 
 
 
