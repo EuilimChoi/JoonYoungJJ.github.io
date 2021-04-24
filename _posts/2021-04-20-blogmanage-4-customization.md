@@ -56,7 +56,7 @@ Jekyll은 Generators, Converters, Commands, Tags, Filters, Hooks 총 6개 타입
 
 > Generators    : Github Pages의 파일들을 변환하여 Static Site를 생성  
 > Converters    : Markup언어를 변환하여 HTML로 변환  
-> Commands      : Jekyll Exe의 기능을 확장  
+> Commands      : Jekyll Exe의 기능을 확장 (모든 포스트에 반복되는 Front Matter 고정 등..)  
 > Tags          : Liquid Tag 생성  
 > Filters       : Liquid Filter 생성  
 > Hooks         : Jekyll 블로그 사용성 증가  
@@ -108,8 +108,11 @@ Front Matter, Profile, Site 에 대한 내용을 Html로 변환한다. Front Mat
 - [**Tags/Categories 설명**](https://jekyllrb.com/docs/posts/#including-images-and-resources)
 
 하지만, 위와 같은 디자인으로 메뉴를 내비두기에는 디자인이 너무 심플하다. 다행히 이 메뉴를 커스텀할 수 있는 방법이 존재한다. 먼저 알아둬야 하는 것이 jekyll-archives 플러그인을 설치하고 활성화시킨 후, 포스트 Front Matter에 Tag(Tags), Category(Categories)를 입력해두고 Jekyll을 실행시키면 `루트폴더/_site/tags`와 `루트폴더/_site/categories` 에 사이트 내에 모든 Tag와 Category가 폴더별로 저장된다는 것이다.  
-Liquid 명령어에서는 site 오브젝트를 통해 포스트 제목 등에 접근이 가능하다. 아래 코드를 보면 이해가 쉽다.  
+Liquid 명령어에서는 site 오브젝트를 통해 포스트 제목 등에 접근이 가능하다. 아래 코드를 보면 이해가 쉽다. 아래 내용을 수정해서 각 포스트의 상단에 관련글 목록을 나열하는 것이 가능할 것 같다.  
 ```html
+---
+# Front Matter
+---
 <div class="content">
   <div class="related">
     <ul>
