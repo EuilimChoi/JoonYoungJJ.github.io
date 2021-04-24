@@ -219,8 +219,15 @@ plugins:
   - jekyll-feed
   - jekyll-archives
   - jekyll-sitemap
+  - jekyll-assets
+  - jekyll-admin
 # Converters
   - jekyll-coffeescript
+# Commnads
+  - jekyll-compose
+# Hooks
+  - jemoji
+  - jekyll-spaceship
 # Others
   - jekyll-paginate
   - jekyll-gist
@@ -232,8 +239,15 @@ whitelist:
   - jekyll-feed
   - jekyll-archives
   - jekyll-sitemap
+  - jekyll-assets
+  - jekyll-admin
 # Converters
   - jekyll-coffeescript
+# Commnads
+  - jekyll-compose
+# Hooks
+  - jemoji
+  - jekyll-spaceship
 # Others
   - jekyll-paginate
   - jekyll-gist
@@ -267,7 +281,25 @@ jekyll-archives:
   permalinks:
     category: /categories/:name/
     tag: /tags/:name/
-
+jekyll_compose:
+  auto_open: true
+  default_front_matter:
+    drafts:
+      title:  "draft title {{ article.published_at | date: "%Y-%m-%d" }}" 
+      excerpt: "draft excerpt {{ article.published_at | date: "%Y-%m-%d" }}"
+      category: Draft
+      tags: Draft
+    posts:
+      title:  "post title {{ article.published_at | date: "%Y-%m-%d" }}" 
+      excerpt: "post excerpt {{ article.published_at | date: "%Y-%m-%d" }}"
+      categories:
+        - Temp
+      tags:
+        - Temp
+      toc: true
+      toc_sticky: true
+      date: {{ article.published_at | date: "%Y-%m-%d" }}
+      last_modified_at: {{ article.published_at | date: "%Y-%m-%d" }}
 
 # HTML Compression
 # - https://jch.penibelst.de/
@@ -286,7 +318,7 @@ defaults:
     values:
       layout: single
       toc: true
-      toc_label: "목차"
+      toc_label: "Table of Contents"
       author_profile: true
       author: Joon
       read_time: true

@@ -89,12 +89,12 @@ whitelist:
 하지만 일단 에러가 발생하면 디버깅에 어려움이 발생할 수 있으므로, 라이브러리를 추가하기 전에는 글을 먼저 올리고 정상적으로 사이트가 생성되는 것을 확인한 뒤에 라이브러리 추가하는 작업을 하는 식으로 작업을 나눠서 진행하는 것을 추천한다.  
 
 ---
-이제, Jekyll에 적용시킬 수 있는 플러그인을 차근차근 살펴보려 한다. 
+이제, Jekyll에 적용시킬 수 있는 플러그인을 직접 하나씩 살펴보려 한다. 
 
-### `Generators > jekyll-feed`  
-Front Matter, Profile, Site 에 대한 내용을 Html로 변환한다. Front Matter는 이전에 작성해 둔 [블로그 관리 1](https://joonyoungjj.github.io/blogmanage-1-front_matter)을 참고하면 된다.  
+### `Generators > jekyll-feed` ★★★★★ 
+Front Matter, Profile, Site 에 대한 내용을 Html로 변환한다. Front Matter는 이전에 작성해 둔 [블로그 관리 1](https://joonyoungjj.github.io/blog/2021/04/19/blogmanage-1-front_matter/)을 참고하면 된다.  
 
-### `Generators > jekyll-archives`  
+### `Generators > jekyll-archives` ★★★★★  
 날짜, 태그, 카테고리를 생성한다. Github 블로그에 포스트를 작성할 때에는 전문(Front Matter)에 필요에 따라서 Tag, Category, Date를 작성할 수 있다. 이 태그들은 jekyll-archives 플러그인을 통해 자동으로 메뉴를 만들기 위한 키워드다.  
 
 태그와 카테고리는 아래와 같이 포스트의 마지막에 나타난다.  
@@ -110,27 +110,51 @@ Front Matter, Profile, Site 에 대한 내용을 Html로 변환한다. Front Mat
 하지만, 위와 같은 디자인으로 메뉴를 내비두기에는 디자인이 너무 심플하다. 다행히 이 메뉴를 커스텀할 수 있는 방법이 존재한다. 먼저 알아둬야 하는 것이 jekyll-archives 플러그인을 설치하고 활성화시킨 후, 포스트 Front Matter에 Tag(Tags), Category(Categories)를 입력해두고 Jekyll을 실행시키면 `루트폴더/_site/tags`와 `루트폴더/_site/categories` 에 사이트 내에 모든 Tag와 Category가 폴더별로 저장된다는 것이다.  
 Liquid 명령어에서는 site 오브젝트를 통해 포스트 제목 등에 접근이 가능하다. 아래 코드를 보면 이해가 쉽다. 아래 내용을 수정해서 각 포스트의 상단에 관련글 목록을 나열하는 것이 가능할 것 같다. 해당 코드에 대한 정보는 이 [링크](https://wiki.archlinux.org/index.php/Jekyll)를 참조하면 확인할 수 있다.  
 
-### `Generators > jekyll-sitemap`  
+### `Generators > jekyll-sitemap` ★★★★★  
 [사이트 맵](https://developers.google.com/search/docs/advanced/sitemaps/overview?hl=ko)을 자동으로 생성한다.  
 
 {% include video id="JlamLfyFjTA" provider="youtube" %}
 {: .text-center}  
 
-### `Converters > jekyll-textile-converter`  
-Markup언어의 종류는 상당히 다양하지만, jekyll은 markdown과 textile만 지원한다. 사실, textile로 Github 블로그를 작성한다는 글을 많이 접하지 않아 몰랐지만, 이 플러그인을 설치하면 markdown 대신 textile로 포스트를 작성할 수 있다고 한다.  
+### `Generators > jekyll-assets` ★★★★☆  
+jekyll-archives에서 Tag, Post 등의 키워드를 사용할 수 있게 된 것처럼 이 플러그인을 설치하면 asset 관련된 오브젝트를 사용할 수 있게 된다. 자세한 설명은 `Readme.md`를 참고하면 될 것 같다.  
 
-- [textile](https://textile-lang.com/)
+- [jekyll-assests repository](https://github.com/envygeeks/jekyll-assets)  
 
-### `Converters > jekyll-coffeescript`  
-웹 사이트를 보기좋게 꾸미는 데 있어서 자바스크립트는 꼭 필요한 존재이다. CoffeeScript는 이 플러그인으로 인해 JavaScript로 컴파일된다. CoffeeScript를 사용하면 기존 JS 코드에 비해 훨씬 간결하게 원하는 작업을 수행할 수 있는 장점이 있다.  
+### `Generators > jekyll-admin` ★★★★☆  
+작성예정  
+
+### `Converters > jekyll-textile-converter` ★☆☆☆☆  
+Markup언어의 종류는 상당히 다양하지만, jekyll은 markdown과 textile만 지원한다. textile로 jekyll 블로그 포스트를 작성한다는 글을 본적이 없어 몰랐지만, 이 플러그인을 설치하면 markdown 대신 textile로도 포스트를 작성이 가능해진다고 한다.  
+
+- [textile](https://textile-lang.com/)  
+
+### `Converters > jekyll-coffeescript` ★★☆☆☆  
+웹 사이트를 보기좋게 꾸미는 데 있어서 자바스크립트는 꼭 필요한 존재이다. Markdown으로 작성되는 포스트에 CoffeeScript 코드를 작성하면 이 플러그인이 그 코드를 JavaScript로 컴파일한다. CoffeeScript를 사용하면 같은 목적을 수행하는 데 있어서 기존 JS 코드에 비해 훨씬 간결하게 작성이 된다는 장점이 있다.  
 
 - [CoffeeScript](https://coffeescript.org/)  
 
-### `Converters > jekyll-opal`  
+### `Converters > jekyll-opal` ★★☆☆☆   
 jekyll-coffescript 와 마찬가지로 JavaScript 코드를 생성해내지만, 이 때 사용되는 언어는 Ruby 이다.  
 
-### `Commands > jekyll-compose`  
-이 플러그인을 사용하면 포스트를 등록할 때 여러  
+### `Commands > jekyll-compose` ★☆☆☆☆  
+이 플러그인을 사용하면 포스트를 등록할 때 사용되는 새로운 jekyll 명령어 그룹과 모든 포스트에 적용되는 기본 설정 등을 변경할 수 있다. 이 플러그인을 사용하면 포스트 작성 및 업데이트를 자동으로 진행해주는 프로그램 개발도 가능할 것으로 보인다.  
+사실, 위 키워드 확장보다 더 눈에 띄는 기능은 전문 자동 설정 기능이다. 이 플러그인의 저장소의 `Readme.md`를 보면 이 기능에 대해 자세히 알 수 있다.  
+- [jekyll-compose repository](https://github.com/jekyll/jekyll-compose)  
+
+### `Tags/Filters` ★☆☆☆☆  
+Tags와 Filters는 이미 기본적으로 제공되는 기능만으로도 충분하기에 별도의 플러그인이 불필요할 것으로 생각한다.  
+
+### `Hooks > jemoji`  ★★★☆☆
+emoji를 볼 수 있도록 해주는 플러그인이다. 웬만하면 설치하는 편이 좋을 것 같다.  
+
+### `Hooks > jekyll-spaceship` ★★★★★  
+여러 기능들을 확장시켜서 사용할 수 있도록 해주는 플러그인이다. 기본 테이블 등에 음영이나 병합 등의 기능을 넣는 등 유용한 확장기능이 있기 때문에 설치하여 사용하는 것이 좋을 것 같다. 상당히 유용한 기능이 많고 설명이 아주 상세하게 `Readme.md`에 적혀있기 때문에 읽어보고 필요한 기능을 찾아 사용하면 될 것 같다.  
+- [jekyll-spaceship repository](https://github.com/jeffreytse/jekyll-spaceship)  
+
+
+
+
 
 
 
