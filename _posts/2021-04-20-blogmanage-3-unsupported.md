@@ -16,7 +16,7 @@ toc_icon : fas fa-file-code
 use_math: true
  
 date: 2021-04-20
-last_modified_at: 2021-04-20
+last_modified_at: 2021-04-24
 ---
 
 Github 블로그는 타 블로그와는 달라서, 웹 사이트 노출, 댓글기능, 웹 사이트 방문자 분석 등 기본적으로 제공되어야 할 법한 기능들을 모두 직접 등록하여 사용하여야 한다. 다행히도 대부분의 기업들이 무료로 이러한 서비스를 제공하고 있어서 제대로된 가이드만 있다면 따라하는 데 있어서 어려움은 없을 것 같다.  
@@ -32,7 +32,9 @@ Github 블로그는 타 블로그와는 달라서, 웹 사이트 노출, 댓글�
 그 이후, 사이트맵 (Sitemap.xml)을 웹마스터 도구에 등록을 하게되면 검색을 할 수 있는 준비가 끝난다. 다음과 Zum은 별도의 사이트맵 등록이 불필요하다고 한다.  
 - [**Naver 사이트맵 등록**](http://blog.naver.com/PostView.nhn?blogId=pswkiller&logNo=221343368118&categoryNo=0&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=postView)
 - [**Google 사이트맵 등록**](https://imweb.me/faq?mode=view&category=29&category2=35&idx=15573)
-- [**Bing 사이트맵 등록**](https://nicksstory.tistory.com/405)
+- [**Bing 사이트맵 등록**](https://nicksstory.tistory.com/405)  
+
+Google 의 경우에는 위 방법을 따라 사이트맵을 등록하더라도 정상적으로 사이트맵이 적용되지 않는 경우가 있다. 사이트맵을 등록했을 때 정상적으로 등록이 되지 않고 **`가져올 수 없음 (could not be read)`** 에러가 발생하는 경우가 흔히 알려진 현상인데, 이 에러를 해결하기 위해서는 웹 마스터 도구 메뉴 중 `URL 검사`를 눌러 직접 Github 블로그 URL 을 입력한 뒤 검사하여 나오는 결과 화면에서 "색인 생성 요청" 을 클릭하면 된다. (나의 경우에는 이 URL 검사 결과 화면에 **`URL이 Google에 등록되어 있지 않음`** 이라는 에러문구가 떠 있었다.)  
 
 ---
 

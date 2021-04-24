@@ -54,8 +54,8 @@ Jekyll은 여러가지 플러그인을 설치할 수 있도록 되어 있다. �
 
 Jekyll은 Generators, Converters, Commands, Tags, Filters, Hooks 총 6개 타입의 플러그인을 지원한다.  
 
-> Generators    : Markdown을 변환하여 Static Site를 생성  
-> Converters    : Markup언어를 변환하여 State Site에 포함  
+> Generators    : Github Pages의 파일들을 변환하여 Static Site를 생성  
+> Converters    : Markup언어를 변환하여 HTML로 변환  
 > Commands      : Jekyll Exe의 기능을 확장  
 > Tags          : Liquid Tag 생성  
 > Filters       : Liquid Filter 생성  
@@ -86,16 +86,13 @@ whitelist:
 여기까지 작업한 내용을 저장하고, "Start Command Propmt With Ruby" 를 실행하여 cd 명령어를 통해 루트폴더로 cmd를 이동시킨 뒤, bundle 명령어를 입력하여 실행해주면 자동으로 누락된 Ruby 라이브러리가 다운로드가 된다. (만약 Ruby가 설치되어 있지 않다면 이 [**링크**](https://rubyinstaller.org/downloads/)로 들어가서, 컴퓨터의 운영체제(x86/x64)에 맞는 Ruby(with Devkit)을 설치하면 된다.)
 
 라이브러리 추가 문구(Gemfile, _config.yml)가 정확하지 않으면 git push를 해도 사이트에 업데이트 되지 않는 에러가 발생할 수 있다. 물론, 잘못된 내용을 수정하고 다시 git push를 하면 정상적으로 사이트가 생성된다.  
-하지만 일단 에러가 발생하면 디버깅에 어려움이 발생할 수 있으므로, 라이브러리를 추가하기 전에는 글을 먼저 올리고 정상적으로 사이트가 생성되는 것을 확인한 뒤에 라이브러리 추가하는 작업을 하는 식으로 작업을 나눠서 진행하는 것을 추천한다. 
+하지만 일단 에러가 발생하면 디버깅에 어려움이 발생할 수 있으므로, 라이브러리를 추가하기 전에는 글을 먼저 올리고 정상적으로 사이트가 생성되는 것을 확인한 뒤에 라이브러리 추가하는 작업을 하는 식으로 작업을 나눠서 진행하는 것을 추천한다.  
 
 ---
 이제, Jekyll에 적용시킬 수 있는 플러그인을 차근차근 살펴보려 한다. 
 
 ### `Generators > jekyll-feed`  
-Front Matter, Profile, Site 에 대한 내용을 Html로 변환한다. Front Matter는 이전에 작성해 둔 [블로그 관리 1](https://joonyoungjj.github.io/blogmanage-1-front_matter)을 참고하면 된다.
-
-- [Github repository](https://github.com/jekyll/jekyll-feed)
-- Docs - 찾을 수 없음
+Front Matter, Profile, Site 에 대한 내용을 Html로 변환한다. Front Matter는 이전에 작성해 둔 [블로그 관리 1](https://joonyoungjj.github.io/blogmanage-1-front_matter)을 참고하면 된다.  
 
 ### `Generators > jekyll-archives`  
 날짜, 태그, 카테고리를 생성한다. Github 블로그에 포스트를 작성할 때에는 전문(Front Matter)에 필요에 따라서 Tag, Category, Date를 작성할 수 있다. 이 태그들은 jekyll-archives 플러그인을 통해 자동으로 메뉴를 만들기 위한 키워드다.  
@@ -111,4 +108,43 @@ Front Matter, Profile, Site 에 대한 내용을 Html로 변환한다. Front Mat
 - [**Tags/Categories 설명**](https://jekyllrb.com/docs/posts/#including-images-and-resources)
 
 하지만, 위와 같은 디자인으로 메뉴를 내비두기에는 디자인이 너무 심플하다. 다행히 이 메뉴를 커스텀할 수 있는 방법이 존재한다. 먼저 알아둬야 하는 것이 jekyll-archives 플러그인을 설치하고 활성화시킨 후, 포스트 Front Matter에 Tag(Tags), Category(Categories)를 입력해두고 Jekyll을 실행시키면 `루트폴더/_site/tags`와 `루트폴더/_site/categories` 에 사이트 내에 모든 Tag와 Category가 폴더별로 저장된다는 것이다.  
+Liquid 명령어에서는 site 오브젝트를 통해 포스트 제목 등에 접근이 가능하다. 아래 코드를 보면 이해가 쉽다.  
+```html
+<div class="content">
+  <div class="related">
+    <ul>
+      {% for post in site.posts %}
+      <li>
+	<span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+```
+
+### `Generators > jekyll-sitemap`  
+[사이트 맵](https://developers.google.com/search/docs/advanced/sitemaps/overview?hl=ko)을 자동으로 생성한다.  
+
+{% include video id="JlamLfyFjTA" provider="youtube" %}
+{: .text-center}  
+
+### `Converters > jekyll-textile-converter`  
+Markup언어의 종류는 상당히 다양하지만, jekyll은 markdown과 textile만 지원한다. 사실, textile로 Github 블로그를 작성한다는 글을 많이 접하지 않아 몰랐지만, 이 플러그인을 설치하면 markdown 대신 textile로 포스트를 작성할 수 있다고 한다.  
+
+- [textile](https://textile-lang.com/)
+
+### `Converters > jekyll-coffeescript`  
+웹 사이트를 보기좋게 꾸미는 데 있어서 자바스크립트는 꼭 필요한 존재이다. CoffeeScript는 이 플러그인으로 인해 JavaScript로 컴파일된다. CoffeeScript를 사용하면 기존 JS 코드에 비해 훨씬 간결하게 원하는 작업을 수행할 수 있는 장점이 있다.  
+
+- [CoffeeScript](https://coffeescript.org/)  
+
+### `Converters > jekyll-opal`  
+jekyll-coffescript 와 마찬가지로 JavaScript 코드를 생성해내지만, 이 때 사용되는 언어는 Ruby 이다.  
+
+### `Commands > jekyll-compose`  
+??  
+
+
+
 
