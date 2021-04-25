@@ -1,5 +1,5 @@
 ---
-title:  "Blog 관리 4 - Github 블로그 커스터마이징 A-Z 정리 (Plugins)"
+title:  "Github Blog 4 - Github 블로그 커스터마이징 A-Z 정리 (Plugins)"
 excerpt: "Github 블로그를 커스터마이징 기법"
 
 categories:
@@ -13,7 +13,7 @@ toc_icon : fas fa-file-code
 use_math: true
  
 date: 2021-04-20
-last_modified_at: 2021-04-20
+last_modified_at: 2021-04-25
 
 
 gallery:
@@ -49,8 +49,9 @@ gallery:
 
 Jekyll은 여러가지 플러그인을 설치할 수 있도록 되어 있다. 먼저, 사용가능한 플러그인 리스트는 아래 링크를 따라가면 확인할 수 있다.  
 
-- [공식사이트 Jekyll 플러그인 목록](https://jekyllrb.com/docs/plugins/your-first-plugin/)  
-- [인기있는 Jekyll 플러그인 TOP 33](https://planetjekyll.github.io/plugins/top)
+- [Jekyll 플러그인 추천 목록](https://jekyllrb.com/docs/plugins/your-first-plugin/)  
+- [Jekyll 플러그인 TOP 33](https://planetjekyll.github.io/plugins/top)  
+- [플러그인 전체 목록](https://github.com/planetjekyll/awesome-jekyll-plugins)
 
 Jekyll은 Generators, Converters, Commands, Tags, Filters, Hooks 총 6개 타입의 플러그인을 지원한다.  
 
@@ -121,8 +122,16 @@ jekyll-archives에서 Tag, Post 등의 키워드를 사용할 수 있게 된 것
 
 - [jekyll-assests repository](https://github.com/envygeeks/jekyll-assets)  
 
-### `Generators > jekyll-admin` ★★★★☆  
-작성예정  
+### `Generators > jekyll-admin` ★★★☆☆  
+로컬컴퓨터에서 로컬을 통해 서버에 접속한 뒤, `http://localhost:4000/admin`으로 이동하면, 일반 블로그에서와 유사한 환경을 제공한다.   
+
+![jekyll admin](https://github.com/jekyll/jekyll-admin/raw/master/screenshot.png)  
+
+### `Generators > jekyll-seo-tag` ★★★☆☆  
+SEO를 위한 meta 태그를 생성한다.  
+
+### `Generators > jekyll-auto-image` ★★★☆☆    
+사이트의 링크를 복사해갈 때, 자동으로 대표 이미지를 생성한다.
 
 ### `Converters > jekyll-textile-converter` ★☆☆☆☆  
 Markup언어의 종류는 상당히 다양하지만, jekyll은 markdown과 textile만 지원한다. textile로 jekyll 블로그 포스트를 작성한다는 글을 본적이 없어 몰랐지만, 이 플러그인을 설치하면 markdown 대신 textile로도 포스트를 작성이 가능해진다고 한다.  
@@ -133,6 +142,7 @@ Markup언어의 종류는 상당히 다양하지만, jekyll은 markdown과 texti
 웹 사이트를 보기좋게 꾸미는 데 있어서 자바스크립트는 꼭 필요한 존재이다. Markdown으로 작성되는 포스트에 CoffeeScript 코드를 작성하면 이 플러그인이 그 코드를 JavaScript로 컴파일한다. CoffeeScript를 사용하면 같은 목적을 수행하는 데 있어서 기존 JS 코드에 비해 훨씬 간결하게 작성이 된다는 장점이 있다.  
 
 - [CoffeeScript](https://coffeescript.org/)  
+
 
 ### `Converters > jekyll-opal` ★★☆☆☆   
 jekyll-coffescript 와 마찬가지로 JavaScript 코드를 생성해내지만, 이 때 사용되는 언어는 Ruby 이다.  

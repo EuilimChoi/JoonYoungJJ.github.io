@@ -1,5 +1,5 @@
 ---
-title:  "Blog 관리 1 - Jekyll Front Matter"
+title:  "Github Blog 1 - Jekyll Front Matter"
 excerpt: "블로그 관리를 위한 Jekyll 문법"
 
 categories:

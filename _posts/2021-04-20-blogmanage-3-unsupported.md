@@ -1,5 +1,5 @@
 ---
-title:  "Blog 관리 3 - Github 블로그 별도 추가 항목 (댓글, 애널리틱스 등)"
+title:  "Github Blog 3 - Github 블로그 별도 추가 항목 (댓글, 애널리틱스 등)"
 excerpt: "Github 블로그 메뉴얼 작업 리스트"
 
 categories:

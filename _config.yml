@@ -221,6 +221,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-assets
   - jekyll-admin
+  - jekyll-seo-tag
 # Converters
   - jekyll-coffeescript
 # Commnads
@@ -232,6 +233,8 @@ plugins:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-include-cache
+# SNS
+  - jekyll-auto-image
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -241,6 +244,7 @@ whitelist:
   - jekyll-sitemap
   - jekyll-assets
   - jekyll-admin
+  - jekyll-seo-tag
 # Converters
   - jekyll-coffeescript
 # Commnads
@@ -252,7 +256,8 @@ whitelist:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-include-cache
-
+# SNS
+  - jekyll-auto-image
 
 # Archives
 #  Type
@@ -285,13 +290,13 @@ jekyll_compose:
   auto_open: true
   default_front_matter:
     drafts:
-      title:  "draft title {{ article.published_at | date: "%Y-%m-%d" }}" 
-      excerpt: "draft excerpt {{ article.published_at | date: "%Y-%m-%d" }}"
+      title:  "draft title" 
+      excerpt: "draft excerpt"
       category: Draft
       tags: Draft
     posts:
-      title:  "post title {{ article.published_at | date: "%Y-%m-%d" }}" 
-      excerpt: "post excerpt {{ article.published_at | date: "%Y-%m-%d" }}"
+      title:  "post title" 
+      excerpt: "post excerpt"
       categories:
         - Temp
       tags:
@@ -300,6 +305,14 @@ jekyll_compose:
       toc_sticky: true
       date: {{ article.published_at | date: "%Y-%m-%d" }}
       last_modified_at: {{ article.published_at | date: "%Y-%m-%d" }}
+jekyll_admin:
+  hidden_links:
+    - posts
+    - pages
+    - staticfiles
+    - datafiles
+    - configuration
+  homepage: "pages" # pages (default), posts, <collection_name>, datafiles, staticfiles ,drafts and configuration
 
 # HTML Compression
 # - https://jch.penibelst.de/
