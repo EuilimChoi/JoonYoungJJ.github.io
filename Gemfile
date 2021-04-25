@@ -8,6 +8,5 @@ gem "jekyll-spaceship"
 gem "jekyll-assets"
 gem "jekyll-admin"
 gem "jekyll-seo-tag"
-gem "jekyll-auto-image"
 
 gemspec

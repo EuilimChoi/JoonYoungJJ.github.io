@@ -1,6 +1,6 @@
 ---
-title:  "Github Blog 5 - 사이드 메뉴 생성"
-excerpt: "Github Blog 메뉴 (사이드)"
+title:  "Github Blog 5 - 사이드 바 메뉴 생성"
+excerpt: "Github Blog 메뉴 (사이드 바)"
 
 categories:
   - Blog

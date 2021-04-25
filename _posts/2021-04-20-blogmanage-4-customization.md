@@ -130,9 +130,6 @@ jekyll-archives에서 Tag, Post 등의 키워드를 사용할 수 있게 된 것
 ### `Generators > jekyll-seo-tag` ★★★☆☆  
 SEO를 위한 meta 태그를 생성한다.  
 
-### `Generators > jekyll-auto-image` ★★★☆☆    
-사이트의 링크를 복사해갈 때, 자동으로 대표 이미지를 생성한다.
-
 ### `Converters > jekyll-textile-converter` ★☆☆☆☆  
 Markup언어의 종류는 상당히 다양하지만, jekyll은 markdown과 textile만 지원한다. textile로 jekyll 블로그 포스트를 작성한다는 글을 본적이 없어 몰랐지만, 이 플러그인을 설치하면 markdown 대신 textile로도 포스트를 작성이 가능해진다고 한다.  
 
