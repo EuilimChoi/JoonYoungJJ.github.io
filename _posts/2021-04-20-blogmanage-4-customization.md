@@ -162,7 +162,8 @@ emoji를 볼 수 있도록 해주는 플러그인이다. 웬만하면 설치하�
 여러 기능들을 확장시켜서 사용할 수 있도록 해주는 플러그인이다. 기본 테이블 등에 음영이나 병합 등의 기능을 넣는 등 유용한 확장기능이 있기 때문에 설치하여 사용하는 것이 좋을 것 같다. 상당히 유용한 기능이 많고 설명이 아주 상세하게 `Readme.md`에 적혀있기 때문에 읽어보고 필요한 기능을 찾아 사용하면 될 것 같다.  
 - [jekyll-spaceship repository](https://github.com/jeffreytse/jekyll-spaceship)  
 
-
+아래 플러그인은 minimal-mistakes 테마에서 사용시 에러가 발생되는 것을 확인하였습니다. : jekyll-auto-image
+{: .notice--danger}  
 
 
 
