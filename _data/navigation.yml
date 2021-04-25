@@ -10,3 +10,10 @@ main:
     url: /collection-archive/
   - title: "Sitemap"
     url: /sitemap/
+
+# side-bar menu
+sidemenu:
+  - title : 블로그 관리 
+    children :
+      - title : "일지"
+        url : /blog/2021/04/20/blogmanage-4-customization/

@@ -1,5 +1,5 @@
 ---
-title:  "Github Blog 4 - Github 블로그 커스터마이징 A-Z 정리 (Plugins)"
+title:  "Github Blog 4 - Github 블로그 플러그인 정리  (minimal-mistakes)"
 excerpt: "Github 블로그를 커스터마이징 기법"
 
 categories:

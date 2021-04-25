@@ -1,5 +1,5 @@
 ---
-title:  "Github Blog 3 - Github 블로그 별도 추가 항목 (댓글, 애널리틱스 등)"
+title:  "Github Blog 3 - Github 블로그 웹마스터 작업, 방문자 분석, 댓글 추가 (minimal-mistakes)"
 excerpt: "Github 블로그 메뉴얼 작업 리스트"
 
 categories:
@@ -60,6 +60,6 @@ _(이 블로그에는 utterance가 적용되어 있다. Issues에서 댓글을 �
 analytics:
   provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          : "G-VW18SDWR8S"
+    tracking_id          : "G-??????????"
     anonymize_ip         : false # true, false (default)
 ```

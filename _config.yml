@@ -328,8 +328,8 @@ defaults:
       layout: single
       toc: true
       toc_label: "Table of Contents"
-      author_profile: true
-      author: Joon
+      author_profile: false # false : 사이드바에 profile 미생성 / true : 사이드바에 profile 생성
+      author: DevJ
       read_time: true
       comments: true
       share: true
