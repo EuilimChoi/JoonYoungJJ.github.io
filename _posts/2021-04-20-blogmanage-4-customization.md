@@ -35,6 +35,9 @@ gallery:
 
 {% include figure image_path="/assets/image/blogmanage-4/BlogStructure.png" alt="구역 별 이름" caption="구역 별 이름" %}  
 
+아래에는 플러그인에 대한 내용만 다뤄지므로 메뉴에 대한 설명은 다음 글인 [**Github Blog 5 - 메뉴 생성 (minimal-mistakes)**](https://joonyoungjj.github.io/blog/2021/04/25/blogmanage-5-menu/)을 참고하길 바란다.
+{: .notice--primary}  
+
 ---
 
 ## [**Liquid**](https://shopify.github.io/liquid/)
