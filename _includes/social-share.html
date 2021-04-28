@@ -42,8 +42,8 @@
       container: '#kakao-link-btn',
       objectType: 'feed',
       content: {
-        title: '{{ page.title | url_encode }}',
-        description: '{{ page.excerpt | url_encode }}',
+        title: '{{ page.title }}',
+        description: '{{ page.excerpt }}',
         imageUrl: 'https://joonyoungjj.github.io/assets/image/JoonLogo.png',
         link: {
           mobileWebUrl: '{{ page.url | absolute_url }}',
