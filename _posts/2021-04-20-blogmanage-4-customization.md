@@ -108,8 +108,6 @@ Front Matter, Profile, Site 에 대한 내용을 Html로 변환한다. Front Mat
 
 그리고 이를 각각 클릭해보면 Tag 인덱싱 테이블, Category 인덱싱 테이블이 각각 자동으로 만들어져있음을 확인할 수 있다.
 
-{% include gallery caption="Index" layout="half" %}  
-
 - [**Tags/Categories 설명**](https://jekyllrb.com/docs/posts/#including-images-and-resources)
 
 jekyll-archives 플러그인을 설치하고 활성화시킨 후, 포스트 Front Matter에 Tag(Tags), Category(Categories)를 입력해두고 Jekyll을 실행시키면 `루트폴더/_site/tags`와 `루트폴더/_site/categories` 에 사이트 내에 모든 Tag와 Category가 폴더별로 저장되는데, 이 기능은 후에 사이드바 메뉴 등을 작성하는데 활용되기도 한다.  
