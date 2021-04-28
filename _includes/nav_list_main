@@ -7,7 +7,7 @@
       <!--전체 글 수-->
       <li>
         <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
-        <span class="nav__sub-title">블로그</span>
+        <span class="nav__sub-title">🎫 블로그</span>
             <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
             <ul>
                 <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
@@ -25,11 +25,11 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">Python</span>
+        <span class="nav__sub-title">🐍 Python</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Python_Basic" %}
-                        <li><a href="/categories/Python_Basic" class="">기초문법 ({{category[1].size}})</a></li>
+                    {% if category[0] == "Python-Basic" %}
+                        <li><a href="/categories/Python-Basic" class="">기초문법 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
