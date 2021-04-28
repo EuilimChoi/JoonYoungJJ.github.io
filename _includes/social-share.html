@@ -29,8 +29,8 @@
             description: '{{ page.excerpt }}',  // 본문 바로 아래 들어가는 영역?
             imageUrl: 'https://joonyoungjj.github.io/assets/image/JoonLogo.png', // 이미지
             link: {
-              mobileWebUrl: '{{ page.url | absolute_url | url_encode }}',
-              webUrl: '{{ page.url | absolute_url | url_encode }}'
+              mobileWebUrl: '{{ page.url | absolute_url }}',
+              webUrl: '{{ page.url | absolute_url }}'
             }
           }
         });
