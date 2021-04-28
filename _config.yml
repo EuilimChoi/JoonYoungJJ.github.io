@@ -327,6 +327,7 @@ defaults:
       toc: true
       toc_label: "Table of Contents"
       author: DevJ
+      author_profile: true
       read_time: true
       comments: true
       share: true
