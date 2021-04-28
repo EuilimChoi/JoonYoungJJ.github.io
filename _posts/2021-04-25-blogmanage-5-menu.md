@@ -1,6 +1,7 @@
 ---
 title:  "Github Blog 5 - 메뉴 생성 (minimal-mistakes)"
 excerpt: "Github Blog 메뉴 - 사이드 바, 네비게이션"
+permalink: blog/5
 
 categories:
   - blog

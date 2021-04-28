@@ -1,6 +1,7 @@
 ---
 title:  "Github Blog 3 - Github 블로그 웹마스터 작업, 방문자 분석, 댓글 추가 (minimal-mistakes)"
 excerpt: "Github 블로그 메뉴얼 작업 리스트"
+permalink: blog/3
 
 categories:
   - blog

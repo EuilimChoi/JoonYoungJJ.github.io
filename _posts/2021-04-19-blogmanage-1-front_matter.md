@@ -1,6 +1,7 @@
 ---
 title:  "Github Blog 1 - Jekyll Front Matter (minimal-mistakes)"
 excerpt: "블로그 관리를 위한 Jekyll 문법"
+permalink: blog/1
 
 categories:
   - blog

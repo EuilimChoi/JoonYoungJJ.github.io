@@ -1,6 +1,7 @@
 ---
 title:  "Github Blog 4 - Github 블로그 플러그인 정리  (minimal-mistakes)"
 excerpt: "Github 블로그를 커스터마이징 기법"
+permalink: blog/4
 
 categories:
   - blog
@@ -111,8 +112,10 @@ Front Matter, Profile, Site 에 대한 내용을 Html로 변환한다. Front Mat
 
 - [**Tags/Categories 설명**](https://jekyllrb.com/docs/posts/#including-images-and-resources)
 
-하지만, 위와 같은 디자인으로 메뉴를 내비두기에는 디자인이 너무 심플하다. 다행히 이 메뉴를 커스텀할 수 있는 방법이 존재한다. 먼저 알아둬야 하는 것이 jekyll-archives 플러그인을 설치하고 활성화시킨 후, 포스트 Front Matter에 Tag(Tags), Category(Categories)를 입력해두고 Jekyll을 실행시키면 `루트폴더/_site/tags`와 `루트폴더/_site/categories` 에 사이트 내에 모든 Tag와 Category가 폴더별로 저장된다는 것이다.  
-Liquid 명령어에서는 site 오브젝트를 통해 포스트 제목 등에 접근이 가능하다. 아래 코드를 보면 이해가 쉽다. 아래 내용을 수정해서 각 포스트의 상단에 관련글 목록을 나열하는 것이 가능할 것 같다. 해당 코드에 대한 정보는 이 [링크](https://wiki.archlinux.org/index.php/Jekyll)를 참조하면 확인할 수 있다.  
+jekyll-archives 플러그인을 설치하고 활성화시킨 후, 포스트 Front Matter에 Tag(Tags), Category(Categories)를 입력해두고 Jekyll을 실행시키면 `루트폴더/_site/tags`와 `루트폴더/_site/categories` 에 사이트 내에 모든 Tag와 Category가 폴더별로 저장되는데, 이 기능은 후에 사이드바 메뉴 등을 작성하는데 활용되기도 한다.  
+
+Liquid 명령어를 통해 이 플러그인으로 생성한 tag, category 오브젝트에 접근이 가능해 진다. 이 [링크](https://wiki.archlinux.org/index.php/Jekyll)를 참조하면 이에 대한 예시를 확인해 볼 수 있다.
+{: .notice--info}  
 
 ### `Generators > jekyll-sitemap` ★★★★★  
 [사이트 맵](https://developers.google.com/search/docs/advanced/sitemaps/overview?hl=ko)을 자동으로 생성한다.  
