@@ -11,9 +11,6 @@ toc: true
 toc_sticky: true
 toc_icon : fas fa-file-code
 use_math: true
-
-sidebar:
-  nav : "sidemenu"
  
 date: 2021-04-25
 last_modified_at: 2021-04-25
