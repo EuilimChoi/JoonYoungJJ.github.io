@@ -1,9 +1,9 @@
 # main links
 main:
   - title: "Home"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "About"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
+    url: https://joonyoungjj.github.io/
+  # - title: "About"
+  #   url: https://mmistakes.github.io/minimal-mistakes/about/
 
 # side-bar menu
 sidemenu:
