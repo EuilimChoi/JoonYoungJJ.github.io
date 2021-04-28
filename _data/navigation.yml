@@ -1,8 +1,8 @@
 # main links
 main:
-  - title: "💒 Home"
+  - title: "Home"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "📜 About"
+  - title: "About"
     url: https://mmistakes.github.io/minimal-mistakes/about/
 
 # side-bar menu
