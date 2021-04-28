@@ -19,12 +19,12 @@ date: 2021-04-25
 last_modified_at: 2021-04-25
 ---
 
-## **사이드 바 메뉴**
+## **사이드 바 메뉴**  
 
 minimal-mistakes 테마에 사이드 바 메뉴 생성을 위해서는 `_data/navigation.yml` 파일을 수정해야 한다. 자세한 내용은 이 [**링크**](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#custom-sidebar-navigation-menu) 를 참조하면 자세히 알아볼 수 있다.  
 간단히 요약하면, navigation에 메뉴 오브젝트를 생성한 다음, 포스트의 전문에 sidebar, nav 키워드를 사용하여 오브젝트를 지정하는 형식이다.  
 
-아래는 예제 코드로 아래와 같이 navatigation.yml 에 yaml 오브젝트를 생성한 뒤, 전문에 해당 yaml 을 지정만 하면 된다.
+아래는 예제 코드로 아래와 같이 navatigation.yml 에 yaml 오브젝트를 생성한 뒤, 전문에 해당 yaml 을 지정만 하면 된다.  
 
 ```yml
 sidemenu:
@@ -47,9 +47,13 @@ sidebar:
 ---
 ```  
 
-`_config.yml`
+`_config.yml`  
 {: .text-center}  
 
+위 방법보다 더 좋은 방법은 Liquid를 이용하여 자동으로 메뉴를 만들어내는 방식이다. 이에 대한 좋은 예시는 아래 블로그 글을 참고하면 될 것 같다. 이 블로그는 아래 첫번째 링크를 기반으로 작성되었다.  
+
+- [minimal-mistake 블로그 카테고리 만들기 (+ 전체 글 수)](https://ansohxxn.github.io/blog/category/#nav_list_main)  
+- [지킬에 카테고리와 태그 적용하기 (1)](https://hoisharka.github.io/jekyll/2017/12/03/jekyll-category-001/)
 
 ## **네비게이션 메뉴**  
-`_data/navigation.yml` 의 main 오브젝트를 수정하면 된다.
+`_data/navigation.yml` 의 main 오브젝트를 수정하면 된다.  
