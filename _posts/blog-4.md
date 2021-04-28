@@ -106,7 +106,7 @@ Front Matter, Profile, Site 에 대한 내용을 Html로 변환한다. Front Mat
 ![태그와 카테고리](/assets/image/blogmanage-4/jekyll-archives-tags.jpg)
 {: .text-center}  
 
-그리고 이를 각각 클릭해보면 Tag 인덱싱 테이블, Category 인덱싱 테이블이 각각 자동으로 만들어져있음을 확인할 수 있다.
+그리고 로컬에서 jekyll serve 명령어를 통해 브라우저에 접속하면, 이 버튼들을 각각 클릭해보면 Tag 인덱싱 테이블, Category 인덱싱 테이블이 각각 자동으로 만들어져있음을 확인할 수 있다.
 
 - [**Tags/Categories 설명**](https://jekyllrb.com/docs/posts/#including-images-and-resources)
 
@@ -127,7 +127,7 @@ jekyll-archives에서 Tag, Post 등의 키워드를 사용할 수 있게 된 것
 - [jekyll-assests repository](https://github.com/envygeeks/jekyll-assets)  
 
 ### `Generators > jekyll-admin` ★★★☆☆  
-로컬컴퓨터에서 로컬을 통해 서버에 접속한 뒤, `http://localhost:4000/admin`으로 이동하면, 일반 블로그에서와 유사한 환경을 제공한다.   
+로컬에서 jekyll serve 명령어를 통해 브라우저(`http://localhost:4000/admin`)에 접속하면 일반 블로그에서와 유사한 환경을 제공한다.   
 
 ![jekyll admin](https://github.com/jekyll/jekyll-admin/raw/master/screenshot.png)  
 
