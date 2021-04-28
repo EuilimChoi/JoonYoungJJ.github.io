@@ -1,5 +1,5 @@
 ---
-title: "Blog"
+title: "운영 노하우"
 layout: archive
 permalink: categories/blog
 author_profile: true

@@ -1,5 +1,5 @@
 ---
-title: "history"
+title: "일지"
 layout: archive
 permalink: categories/history
 author_profile: true
