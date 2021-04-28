@@ -3,12 +3,11 @@ title:  "Github Blog 3 - Github 블로그 웹마스터 작업, 방문자 분석,
 excerpt: "Github 블로그 메뉴얼 작업 리스트"
 
 categories:
-  - Blog
+  - blog
 tags:
-  - Blog Management
-  - Comments
-  - Google Analytics
-  - Webmatser tool
+  - comments
+  - google-analytics
+  - webmatser-tool
 
 toc: true
 toc_sticky: true

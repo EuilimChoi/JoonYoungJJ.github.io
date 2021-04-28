@@ -3,9 +3,9 @@ title:  "Python 기초 1 - Python 개발환경 구축"
 excerpt: "효율적인 Python 코딩 환경 구축을 위한 탐색"
 
 categories:
-  - Python-Basic
+  - python-basic
 tags:
-  - Python
+  - python
 
 toc: true
 toc_sticky: true

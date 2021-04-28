@@ -3,9 +3,8 @@ title:  "Github Blog 2 - Jekyll - markdown + css (minimal-mistakes)"
 excerpt: "kramdown과 관련된 라이브러리에 대한 이해"
 
 categories:
-  - Blog
+  - blog
 tags:
-  - Blog Management
   - kramdown
   - LaTeX
 
