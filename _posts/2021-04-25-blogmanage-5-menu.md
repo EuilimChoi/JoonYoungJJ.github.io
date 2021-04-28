@@ -35,14 +35,14 @@ sidemenu:
 {: .text-center}  
 
 
-```Markdown
+```yml
 ---
 ...
 sidebar:
   nav : "sidemenu"
 ...
 ---
-```  
+```
 
 `_config.yml`  
 {: .text-center}  
