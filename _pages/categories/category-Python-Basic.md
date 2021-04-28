@@ -1,5 +1,5 @@
 ---
-title: "파이썬 기초문법"
+title: "파이썬 기초"
 layout: archive
 permalink: categories/python-basic
 author_profile: true
