@@ -36,7 +36,7 @@ gallery:
 
 {% include figure image_path="/assets/image/blogmanage-4/BlogStructure.png" alt="구역 별 이름" caption="구역 별 이름" %}  
 
-아래에는 플러그인에 대한 내용만 다뤄지므로 메뉴에 대한 설명은 다음 글인 [**Github Blog 5 - 메뉴 생성 (minimal-mistakes)**](https://joonyoungjj.github.io/blog/2021/04/25/blogmanage-5-menu/)을 참고하길 바란다.
+아래에는 플러그인에 대한 내용만 다뤄지므로 메뉴에 대한 설명은 다음 글인 [**Github Blog 5 - 메뉴 생성 (minimal-mistakes)**](https://joonyoungjj.github.io/blog/5/)을 참고하길 바란다.
 {: .notice--primary}  
 
 ---
@@ -62,8 +62,8 @@ Jekyll은 Generators, Converters, Commands, Tags, Filters, Hooks 총 6개 타입
 > Generators    : Github Pages의 파일들을 변환하여 Static Site를 생성  
 > Converters    : Markup언어를 변환하여 HTML로 변환  
 > Commands      : Jekyll Exe의 기능을 확장 (모든 포스트에 반복되는 Front Matter 고정 등..)  
-> Tags          : Liquid Tag 생성  
-> Filters       : Liquid Filter 생성  
+> Tags          : Liquid Tag   
+> Filters       : Liquid Filter  
 > Hooks         : Jekyll 블로그 사용성 증가  
 
 플러그인 추가방식은 아래와 같다. `jekyll-archives`를 설치하는 방법이다. 먼저, 루트폴더에 있는 Gemfile을 편집한다. [**Gemfile**](https://bundler.io/man/gemfile.5.html)은 Ruby 프로그램에서 사용되는 라이브러리에 대한 정보를 나타내는 파일로 매니페스트 파일이라고 생각하면 될 것 같다.
@@ -97,7 +97,7 @@ whitelist:
 이제, Jekyll에 적용시킬 수 있는 플러그인을 직접 하나씩 살펴보려 한다. 
 
 ### `Generators > jekyll-feed` ★★★★★ 
-Front Matter, Profile, Site 에 대한 내용을 Html로 변환한다. Front Matter는 이전에 작성해 둔 [블로그 관리 1](https://joonyoungjj.github.io/blog/2021/04/19/blogmanage-1-front_matter/)을 참고하면 된다.  
+Front Matter, Profile, Site 에 대한 내용을 Html로 변환한다. Front Matter는 이전에 작성해 둔 [블로그 관리 1](https://joonyoungjj.github.io/blog/1/)을 참고하면 된다.  
 
 ### `Generators > jekyll-archives` ★★★★★  
 날짜, 태그, 카테고리를 생성한다. Github 블로그에 포스트를 작성할 때에는 전문(Front Matter)에 필요에 따라서 Tag, Category, Date를 작성할 수 있다. 이 태그들은 jekyll-archives 플러그인을 통해 자동으로 메뉴를 만들기 위한 키워드다.  

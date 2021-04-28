@@ -1,35 +1,51 @@
 <section class="page__share">
   {% if site.data.ui-text[site.locale].share_on_label %}
-    <h4 class="page__share-title">{{ site.data.ui-text[site.locale].share_on_label | default: "Share on" }}</h4>
+  <h4 class="page__share-title">{{ site.data.ui-text[site.locale].share_on_label | default: "Share on" }}</h4>
   {% endif %}
 
 
-  <a href="https://twitter.com/intent/tweet?{% if site.twitter.username %}via={{ site.twitter.username | url_encode }}&{% endif %}text={{ page.title | url_encode }}%20{{ page.url | absolute_url | url_encode }}" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?{% if site.twitter.username %}via={{ site.twitter.username | url_encode }}&{% endif %}text={{ page.title | url_encode }}%20{{ page.url | absolute_url | url_encode }}"
+    class="btn btn--twitter"
+    onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+    title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Twitter">
+    <i class="fab fa-fw fa-twitter" aria-hidden="true"></i>
+    <span> Twitter</span>
+  </a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | url_encode }}" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+    onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+    title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Facebook">
+    <i class="fab fa-fw fa-facebook" aria-hidden="true"></i>
+    <span> Facebook</span>
+  </a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url | url_encode }}" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url | url_encode }}"
+    class="btn btn--linkedin"
+    onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+    title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} LinkedIn">
+    <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i>
+    <span> LinkedIn</span>
+  </a>
 
   <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 
-  <a href="javascript:;" id="kakao-link-btn"> 
-    <!-- 버튼이 생기는 부분, id는 맘대로 쓰시되 아래 js 코드도 동일하게 적용해주셔야 합니다. -->
-    <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" /> <!-- 톡 이미지 부분이고, 전 kakaolink_btn_small.png로 불러왔습니다.   -->
-    </a>
-    <script type="text/javascript">
-        Kakao.init('e3d993223c7cc6d7ce59f08885501ba8');
-        Kakao.Link.createDefaultButton({
-          container: '#kakao-link-btn',
-          objectType: 'feed',
-          content: {
-            title: '{{ page.title | url_encode }}',
-            description: '{{ page.excerpt | url_encode }}', 
-            imageUrl: 'https://joonyoungjj.github.io/assets/image/JoonLogo.png',
-            link: {
-              mobileWebUrl: '{{ page.url | absolute_url }}',
-              webUrl: '{{ page.url | absolute_url }}'
-            }
-          }
-        });
-    </script> 
+  <a href="javascript:;" id="kakao-link-btn">
+    <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" />
+  </a>
+  <script type="text/javascript">
+    Kakao.init('e3d993223c7cc6d7ce59f08885501ba8');
+    Kakao.Link.createDefaultButton({
+      container: '#kakao-link-btn',
+      objectType: 'feed',
+      content: {
+        title: '{{ page.title | url_encode }}',
+        description: '{{ page.excerpt | url_encode }}',
+        imageUrl: 'https://joonyoungjj.github.io/assets/image/JoonLogo.png',
+        link: {
+          mobileWebUrl: '{{ page.url | absolute_url }}',
+          webUrl: '{{ page.url | absolute_url }}'
+        }
+      }
+    });
+  </script>
 </section>
