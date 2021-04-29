@@ -1,7 +1,7 @@
 ---
 title:  "Python 기초 2 - 기초 문법 1"
 excerpt: "Class"
-permalink: python-basic/1
+permalink: python-basic/2
 
 categories:
   - python-basic
@@ -17,4 +17,5 @@ last_modified_at: 2021-04-28
 
 ## Class  
 
-Class란..
+Class란..  
+
