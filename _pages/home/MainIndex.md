@@ -1,5 +1,5 @@
 ---
-permalink: mainindex
+permalink: home/mainindex
 layout : single
 hidden : true
  
