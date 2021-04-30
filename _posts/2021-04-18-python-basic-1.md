@@ -2,7 +2,21 @@
 title:  "Python 기초 1 - Python 개발환경 구축"
 excerpt: "효율적인 Python 코딩 환경 구축을 위한 탐색"
 permalink: python-basic/1
-
+# Site Author
+author:
+  name             : "Joon"
+  avatar           : "/assets/image/JoonProfile.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Dev Joon"
+  location         : "Seoul, Korea"
+  email            :
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/JoonYoungJJ/JoonYoungJJ.github.io"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+      # url: "https://instagram.com/"
+      
 categories:
   - python-basic
 tags:

@@ -100,7 +100,7 @@ author:
   name             : "DevJs"
   avatar           : "/assets/image/JoonLogo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "개발자들-J"
-  location         : "Somewhere in Korea"
+  location         : "Seoul, Korea"
   email            :
   links:
     - label: "GitHub"
