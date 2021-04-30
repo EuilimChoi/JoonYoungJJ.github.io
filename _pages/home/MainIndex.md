@@ -1,6 +1,6 @@
 ---
 permalink: home/mainindex
-layout : single
+layout : splash
 hidden : true
  
 date: 2021-04-20
