@@ -37,7 +37,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "rss" %}
-                        <li><a href="/categories/python-basic" class="">테스트 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/rss" class="">테스트 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
