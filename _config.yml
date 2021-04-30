@@ -221,8 +221,6 @@ plugins:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-include-cache
-# PWA
-  - jekyll-pwa-plugin
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -244,8 +242,6 @@ whitelist:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-include-cache
-# PWA
-  - jekyll-pwa-plugin
 
 # Archives
 #  Type
@@ -299,20 +295,6 @@ jekyll_admin:
     - datafiles
     - configuration
   homepage: "pages" # pages (default), posts, <collection_name>, datafiles, staticfiles ,drafts and configuration
-# PWA : https://github.com/lavas-project/jekyll-pwa
-pwa:
-  enabled: false # Optional
-  sw_src_filepath: service-worker.js # Optional
-  sw_dest_filename: service-worker.js # Optional
-  dest_js_directory: assets/js # Required
-  precache_recent_posts_num: 5 # Optional
-  precache_glob_directory: / # Optional
-  precache_glob_patterns: # Optional
-    - "{js,css,fonts}/**/*.{js,css,eot,svg,ttf,woff}"
-    - index.html
-  precache_glob_ignores: # Optional
-    - sw-register.js
-    - "fonts/**/*"
     
 # HTML Compression
 # - https://jch.penibelst.de/
