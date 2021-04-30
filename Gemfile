@@ -5,7 +5,7 @@ gem "jekyll-coffeescript"
 gem "jekyll-compose"
 gem "jemoji"
 gem "jekyll-spaceship"
-gem "jekyll-assets"
+# gem "jekyll-assets"
 gem "jekyll-admin"
 gem "jekyll-seo-tag"
 

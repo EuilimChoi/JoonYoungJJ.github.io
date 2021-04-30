@@ -23,7 +23,7 @@ name                     : "DevJs"
 short_name               : "DevJs"
 language                 : "ko-KR"
 lang_direction           : "ltr"
-description              : "J 개발일지"
+description              : "Developers J"
 url                      : "https://JoonYoungJJ.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "JoonYoungJJ/JoonYoungJJ.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -99,7 +99,7 @@ analytics:
 author:
   name             : "DevJs"
   avatar           : "/assets/image/JoonLogo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "개발자들-J"
+  bio              : "Developers J"
   location         : "Seoul, Korea"
   email            :
   links:
@@ -210,7 +210,7 @@ plugins:
   - jekyll-feed
   - jekyll-archives
   - jekyll-sitemap
-  - jekyll-assets
+#  - jekyll-assets
   - jekyll-admin
   - jekyll-seo-tag
 # Converters
@@ -231,7 +231,7 @@ whitelist:
   - jekyll-feed
   - jekyll-archives
   - jekyll-sitemap
-  - jekyll-assets
+#  - jekyll-assets
   - jekyll-admin
   - jekyll-seo-tag
 # Converters
