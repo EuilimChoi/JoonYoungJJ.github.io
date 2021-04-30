@@ -2,7 +2,7 @@
 title:  "Python 기초 2 - 기초 문법 1"
 excerpt: "Class"
 permalink: python-basic/2
-hidden: true
+published: false
 
 categories:
   - python-basic
