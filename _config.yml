@@ -316,6 +316,7 @@ defaults:
     values:
       layout: single
       toc: true
+      toc_sticky: true
       toc_label: "Table of Contents"
       author_profile: true
       read_time: true
@@ -323,6 +324,8 @@ defaults:
       share: true
       related: true
       mathjax: true
+      toc_icon : fas fa-file-code
+      use_math: true
       sidebar_main: true
   - scope:
       path: ""
@@ -331,3 +334,30 @@ defaults:
       layout: single
       author_profile: true
       sidebar_main: true
+
+
+authors:
+  Joon:
+    avatar           : "/assets/image/JoonProfile.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+    bio              : "Dev Joon"
+    location         : "Seoul, Korea"
+    email            :
+    links:
+      - label: "GitHub"
+        icon: "fab fa-fw fa-github"
+        url: "https://github.com/JoonYoungJJ/JoonYoungJJ.github.io"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+      # url: "https://instagram.com/"
+  Jieun:
+    avatar           : "/assets/image/JieunProfile.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+    bio              : "Dev Lucy"
+    location         : "Seoul, Korea"
+    email            :
+    links:
+      - label: "GitHub"
+        icon: "fab fa-fw fa-github"
+        url: "https://github.com/JoonYoungJJ/JoonYoungJJ.github.io"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+      # url: "https://instagram.com/"
