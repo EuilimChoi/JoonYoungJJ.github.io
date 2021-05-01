@@ -29,15 +29,15 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "python-basic" %}
-                        <li><a href="/categories/python-basic" class="">기초문법 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/python-basic" class="">문법 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">📚 프로그래밍 위키</span>
+        <span class="nav__sub-title">📚 정보</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "rss" %}
-                        <li><a href="/categories/rss" class="">테스트 ({{category[1].size}})</a></li>
+                    {% if category[0] == "wiki" %}
+                        <li><a href="/categories/wiki" class="">위키 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
