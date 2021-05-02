@@ -15,18 +15,18 @@ theme                  : "minimal-mistakes-jekyll"
 minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "ko_KR"
+locale                   : "ko-KR" # ko-KR / en-US
 title                    : "Js Coding Archive"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "DevJs"
 short_name               : "DevJs"
-language                 : "ko-KR"
+language                 : "ko-KR" # ko-KR / en-US
 lang_direction           : "ltr"
 description              : "Developers J"
-url                      : "https://JoonYoungJJ.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://joonyoungjj.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "JoonYoungJJ/JoonYoungJJ.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "joonyoungjj/joonyoungjj.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/image/JoonLogo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -207,7 +207,7 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 # Plugins (previously gems:)
 plugins:
 # Generators
-  - jekyll-feed
+  # - jekyll-feed
   - jekyll-archives
   - jekyll-sitemap
 #  - jekyll-assets
@@ -228,7 +228,7 @@ plugins:
 # mimic GitHub Pages with --safe
 whitelist:
 # Generators
-  - jekyll-feed
+  # - jekyll-feed
   - jekyll-archives
   - jekyll-sitemap
 #  - jekyll-assets
@@ -327,6 +327,7 @@ defaults:
       toc_icon : fas fa-file-code
       use_math: true
       sidebar_main: true
+      lang: "ko-KR"
   - scope:
       path: ""
       type: pages
