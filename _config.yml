@@ -351,7 +351,7 @@ authors:
       # url: "https://instagram.com/"
   Jieun:
     avatar           : "/assets/image/JieunProfile.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-    bio              : "Dev Lucy"
+    bio              : "Dev Jieun"
     location         : "Seoul, Korea"
     email            :
     links:
