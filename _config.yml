@@ -15,13 +15,13 @@ theme                  : "minimal-mistakes-jekyll"
 minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "ko_KR"
+locale                   : "ko-KR" # ko-KR / en-US
 title                    : "Js Coding Archive"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "DevJs"
 short_name               : "DevJs"
-language                 : "ko-KR"
+language                 : "ko-KR" # ko-KR / en-US
 lang_direction           : "ltr"
 description              : "Developers J"
 url                      : "https://JoonYoungJJ.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -327,6 +327,7 @@ defaults:
       toc_icon : fas fa-file-code
       use_math: true
       sidebar_main: true
+      lang: "ko-KR"
   - scope:
       path: ""
       type: pages
