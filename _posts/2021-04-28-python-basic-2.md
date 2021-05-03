@@ -8,7 +8,7 @@ image:
 author:
   name             : "Joon"
   avatar           : "/assets/image/JoonProfile.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Dev Joon"
+  bio              : "#Developers #CSharp #VBA"
   location         : "Seoul, Korea"
   email            :
   links:
