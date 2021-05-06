@@ -50,7 +50,7 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[1] == "libs" %}
+                    {% if category[0] == "libs" %}
                         <li><a href="/categories/libs" class="">라이브러리 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
