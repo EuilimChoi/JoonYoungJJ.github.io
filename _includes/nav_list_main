@@ -35,6 +35,11 @@
                         <li><a href="/categories/ironpython" class="">IronPython ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
+                {% for category in site.categories %}
+                    {% if category[0] == "ironpython" %}
+                        <li><a href="/categories/ironpython" class="">IronPython ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
             </ul>
         <span class="nav__sub-title">📚 정보</span>
             <ul>
@@ -42,6 +47,8 @@
                     {% if category[0] == "wiki" %}
                         <li><a href="/categories/wiki" class="">위키 ({{category[1].size}})</a></li>
                     {% endif %}
+                {% endfor %}
+                {% for category in site.categories %}
                     {% if category[1] == "libs" %}
                         <li><a href="/categories/wiki" class="">라이브러리 ({{category[1].size}})</a></li>
                     {% endif %}
