@@ -1,8 +1,8 @@
 ---
-title:  "라이브러리 2 - IronPython 간단한 소개 (C#, Python Invoke 함수)"
-excerpt: "IronPython 에 대한 소개와 사용법"
+title:  "IronPython 1 - Selenium 설명 및 사용법 (C#, 크롬 드라이버)"
+excerpt: "Selenium 에 대한 소개와 사용법"
 permalink: libs/1
-image: "https://pbs.twimg.com/profile_images/795455928178905088/vl4hE9Yq_400x400.jpg"
+image: 
 # Site Author
 author:
   name             : "Joon"
@@ -21,7 +21,7 @@ author:
 categories:
   - libs
 tags:
-  -  ironpython
+  - selenium
 
 toc: true
 toc_sticky: true
