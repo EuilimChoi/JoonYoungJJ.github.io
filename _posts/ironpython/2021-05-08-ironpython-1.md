@@ -2,7 +2,7 @@
 title:  "IronPython 1 - IronPython 설명 및 사용법"
 excerpt: "IronPython 에 대한 소개와 사용법"
 permalink: ironpython/1
-image: 
+image: "https://pbs.twimg.com/profile_images/795455928178905088/vl4hE9Yq_400x400.jpg"
 # Site Author
 author:
   name             : "Joon"
@@ -29,4 +29,6 @@ toc_sticky: true
 date: 2021-05-08
 last_modified_at: 2021-05-09
 ---
+
+
 
