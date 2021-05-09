@@ -25,6 +25,22 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+         <span class="nav__sub-title">🤖 기계학습</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "machine-learning" %}
+                        <li><a href="/categories/machine-learning" class="">머신러닝 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        <span class="nav__sub-title">📌 C#</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "accord-dotent" %}
+                        <li><a href="/categories/accord-dotent" class="">Accord.Net ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
         <span class="nav__sub-title">🐍 Python</span>
             <ul>
                 {% for category in site.categories %}
