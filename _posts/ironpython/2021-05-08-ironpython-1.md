@@ -1,6 +1,6 @@
 ---
-title:  "IronPython 1 - Selenium 설명 및 사용법 (C#, 크롬 드라이버)"
-excerpt: "Selenium 에 대한 소개와 사용법"
+title:  "IronPython 1 - IronPython 설명 및 사용법"
+excerpt: "IronPython 에 대한 소개와 사용법"
 permalink: ironpython/1
 image: 
 # Site Author
